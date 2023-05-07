@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-slate-700 w-full text-lg text-white">
+  <div class="flex flex-col bg-slate-700 w-full text-lg text-white text-center">
     Hello Nuxt 3
   </div>
 </template>
