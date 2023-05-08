@@ -1,10 +1,11 @@
 <template>
-    <div class="flex flex-col w-full container text-lg bg-slate-700 mx-auto text-white">
+    <div class="flex flex-col w-full text-lg">
         this is home page
     </div>
 </template>
 
-<script>
+<script setup>
+    
 </script>
 
 <style lang="scss" scoped>
