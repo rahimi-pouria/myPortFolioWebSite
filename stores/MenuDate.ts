@@ -9,23 +9,23 @@ export const useMenuData = defineStore('menu', () => {
     const menu = ref<pageMenu[]>([
         {
             name : 'About',
-            link: ''
+            link: '/About'
         },
         {
             name : 'MySkils',
-            link: ''
+            link: '/MySkils'
         },
         {
             name : 'Work',
-            link: ''
+            link: '/Work'
         },
         {
             name : 'Contact',
-            link: ''
+            link: '/Contact'
         },
         {
             name : 'Blog',
-            link: ''
+            link: '/Blog'
         }
     ] as pageMenu[])
 
