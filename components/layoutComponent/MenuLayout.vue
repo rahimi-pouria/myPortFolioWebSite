@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
     // import stores
-    import { useMenuData } from  '~/stores/MenuDate'
+    import { useMenuData } from '@/stores/MenuDate'
 
     const menus = useMenuData()
 </script>
