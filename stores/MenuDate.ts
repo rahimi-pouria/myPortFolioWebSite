@@ -8,6 +8,10 @@ export interface pageMenu {
 export const useMenuData = defineStore('menu', () => {
     const menu = ref<pageMenu[]>([
         {
+            name : 'Home',
+            link: '/'
+        },
+        {
             name : 'About',
             link: '/About'
         },

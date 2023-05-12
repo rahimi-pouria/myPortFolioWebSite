@@ -3,7 +3,9 @@
         <div class="w-[15%] bg-[#181818] text-white">
             <LayoutComponentMenuLayout />
         </div>
-        <div class="w-[88%]">2</div>
+        <div class="w-[88%] pl-8 ">
+            <slot />
+        </div>
     </div>
 </template>
 

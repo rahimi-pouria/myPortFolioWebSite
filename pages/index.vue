@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col w-full text-lg">
-        this is home page
+    <div class="flex flex-col w-full text-lg h-[100vh]">
+        <HomeSlider />
     </div>
 </template>
 
