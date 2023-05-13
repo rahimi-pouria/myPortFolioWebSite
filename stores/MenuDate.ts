@@ -20,6 +20,10 @@ export const useMenuData = defineStore('menu', () => {
             link: '/MySkils'
         },
         {
+            name : 'MyProject',
+            link: '/MyProject'
+        },
+        {
             name : 'Work',
             link: '/Work'
         },

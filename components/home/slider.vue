@@ -1,92 +1,48 @@
 <template>
-    <div class="flex items-center pl-4 h-[100vh]" id="createLine">
-        <div class="flex w-full">
+    <div class="flex flex-col items-center pl-4 pt-7 h-[100vh]" id="createLine">
+        <div class="flex flex-col w-full gap-8">
             <h1 class="f82-700">
                 Hi <br />
                 I am <br />
                 Pouria Rahimi <br />
                 Front end Developer
             </h1>
+            <span class="f18-400 sub-text">Front end Developer  /  Vue js & Nuxt js</span>
+            <nuxt-link to="/" class="link-contact-me anim-link-contact-me w-[15%]">Contact me!</nuxt-link>
         </div>
     </div>
 </template>
 
 <script setup>
-console.clear();
-
-let angle = 3.14/4;
-let length = 2;
-
-let particles = [];
-
-let mouseHasMoved = false;
-
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  colorMode(HSB);
-  background(0, 0, 0);
-  noStroke();
-  angle = PI/3;
-  for (let i=0; i<500; i++) {
-    new Particle(createVector(random(width), random(height)));
-  }
-}
-
-function draw() {
-  if (!mouseHasMoved) {
-    for (let i=0; i<5; i++) {
-      new Particle(createVector(random(width), random(height)));
-    }
-  }
-  background(0, 0, 0, .1);
-  for (let p of particles) {
-    p.update();
-    p.draw();
-  }
-}
-
-function mouseMoved() {
-  mouseHasMoved = true;
-  for (let i=0; i<5; i++) {
-    new Particle(createVector(mouseX, mouseY));
-  }
-}
-
-class Particle {
-  constructor(pos) {
-    this.pos = pos;
-    this.vel = createVector(random(length*.5, length*1.5), 0).rotate(angle * round(random(0, 360)));
-    this.hue = random(90, 150);
-    this.sat = 100;
-    this.val = 100;
-    this.lifetime = random(50, 150);
-    this.age = 0;
-    particles.push(this);
-  }
-  
-  update() {
-    if (this.age >= this.lifetime) {this.remove()}
-    this.age += 1;
-    if (this.age % 10 == 0) {
-      this.vel.rotate(random([-angle, angle]));
-    }
-    this.pos.add(this.vel);
-  }
-  
-  draw() {
-    push()
-    stroke(this.hue, this.sat, this.val, 1-this.age/this.lifetime);
-    translate(this.pos.x, this.pos.y);
-    line(0, 0, -this.vel.x, -this.vel.y);
-    pop()
-  }
-  
-  remove() {
-    particles.splice(particles.indexOf(this), 1);
-  }
-}
 </script>
 
 <style lang="scss" scoped>
+  .sub-text{
+    color: #8d8d8d;
+  }
 
+  .link-contact-me{
+    color: #08fdd8;
+    font-size: 14px;
+    letter-spacing: 4px;
+    line-height: 50px;
+    text-align: center;
+    padding: 3px 20px;
+    border: 1px solid #08fdd8;
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(transparent, transparent);
+    transition: background-size .5s ease-in-out;
+  }
+  .anim-link-contact-me{
+    background-image: linear-gradient(transparent, transparent),
+       linear-gradient(#08fdd8, #08fdd8);
+  }
+  .link-contact-me:hover{
+    color: #000;
+       background-position: 0 100%;
+       background-size: 100% 80px;
+  }
 </style>
