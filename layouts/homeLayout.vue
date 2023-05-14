@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full text-white">
+    <div class="flex w-full h-[100vh] text-white">
         <div class="w-[15%] bg-[#181818] text-white">
             <LayoutComponentMenuLayout />
         </div>

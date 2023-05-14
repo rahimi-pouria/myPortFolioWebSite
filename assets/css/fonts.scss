@@ -191,10 +191,22 @@
   font-size: clamp(34px,3vw,38px);
   line-height: 120%;
 }
+.f48-400{
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(40px,3vw,48px);
+  line-height: 120%;
+}
 .f48-700{
   font-style: normal;
   font-weight: 700;
   font-size: clamp(40px,3vw,48px);
+  line-height: 120%;
+}
+.f72-400{
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(68px,3vw,72px);
   line-height: 120%;
 }
 .f72-700{

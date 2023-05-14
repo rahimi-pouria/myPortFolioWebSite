@@ -1,6 +1,6 @@
 <template>
     <div class="flex">
-        this is work page
+        <HomeMyPortFolio />
     </div>
 </template>
 
