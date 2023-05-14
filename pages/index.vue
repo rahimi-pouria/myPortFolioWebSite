@@ -1,6 +1,7 @@
 <template>
     <div class="flex flex-col w-full text-lg h-[100vh]">
         <HomeSlider />
+        Home
     </div>
 </template>
 
