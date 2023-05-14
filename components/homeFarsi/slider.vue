@@ -1,22 +1,22 @@
 <template>
-    <div class="flex flex-col items-center pl-4 pt-7 h-[100vh]">
+    <div class="flex flex-col items-center pr-8 pt-7 h-[100vh]">
         <div class="flex flex-col w-full gap-8">
-            <h1 class="f82-700">
-                Hi <br />
-                I am <br />
-                Pouria Rahimi <br />
-                Front end Developer
+            <h1 class="f82-700 gap-3">
+                سلام <br />
+                پوریا رحیمی هستم <br />
+                برنامه نویس فرانت اند 
             </h1>
-            <span class="f18-400 sub-text">Front end Developer  /  Vue js & Nuxt js</span>
-            <nuxt-link to="/" class="link-contact-me anim-link-contact-me w-[20%]">Contact me!</nuxt-link>
+            <span class="f18-400 sub-text">فرانت اند دولوپر  /  Vue js & Nuxt js</span>
+            <nuxt-link to="/" class="link-contact-me anim-link-contact-me w-[20%]">تماس با من</nuxt-link>
         </div>
     </div>
 </template>
 
-<script setup>
+<script>
 </script>
 
 <style lang="scss" scoped>
+    
   .sub-text{
     color: #8d8d8d;
   }
