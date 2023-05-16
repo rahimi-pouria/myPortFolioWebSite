@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="flex">
         صفحه سابقه شغلی من
     </div>
 </template>

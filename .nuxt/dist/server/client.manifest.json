@@ -6,10 +6,10 @@
     "module": true,
     "resourceType": "script"
   },
-  "D:/PortfolioWeb/myPortFolioWebSite/.vscode/myPortFolioWebSite/node_modules/nuxt/dist/app/entry.js": {
+  "/home/pouria-rahimi/PortfolioWeb/myPortFolioWebSite/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "D:/PortfolioWeb/myPortFolioWebSite/.vscode/myPortFolioWebSite/node_modules/nuxt/dist/app/entry.js"
+    "file": "/home/pouria-rahimi/PortfolioWeb/myPortFolioWebSite/node_modules/nuxt/dist/app/entry.js"
   }
 }

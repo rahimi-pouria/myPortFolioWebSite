@@ -1,17 +1,17 @@
 <template>
     <div class="flex flex-col gap-8">
         <h2 class="f48-400 Portfolio">
-            My Portfolio
+            نمونه کارهای من
         </h2>
         <div class="flex justify-between">
-            <p class="f18-400 w-[70%] paragraph-about">
-                A small gallery of recent projects selected by me. 
-                These projects have been done both as a team and individually 
-                with amazing and professional people 
+            <p class="f18-400 w-[70%] paragraph-about-farsi">
+                گالری کوچکی از پروژه های اخیر انتخاب شده توسط من.
+                 این پروژه ها هم به صورت تیمی و هم به صورت انفرادی انجام شده است
+                 با افراد شگفت انگیز و حرفه ای
             </p>
         </div>
         <!-- gallery projects -->
-        <div class="w-full gap-3 pb-5 grid grid-cols-3 gap-5 card-project">
+        <div class="w-full gap-3 pr-5 pb-5 grid grid-cols-3 gap-5 card-project">
             <div v-for="(item, index) in gallery.galleryProject" 
                 @mouseover="showHover = !showHover" 
                 :key="index"
@@ -39,10 +39,12 @@ let showHover = false
 </script>
 
 <style lang="scss" scoped>
-    .Portfolio{
+    .Portfolio[data-v-b6b04235] {
         color: #08fdd8;
         font-weight: 400;
         line-height: 6.7rem;
+        text-align: right;
+        padding-right: 21px;
     }
     .link-portfolio{
         color: #08fdd8;
@@ -68,10 +70,13 @@ let showHover = false
     background-position: 0 100%;
     background-size: 100% 80px;
   }
-  .paragraph-about{
+  .paragraph-about-farsi {
     line-height: 2;
     color: #515152;
-  }
+    text-align: right;
+    width: 100%;
+    padding-right: 21px;
+}
   .show-gallery{
     z-index: 0;
   }

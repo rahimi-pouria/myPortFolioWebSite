@@ -1,6 +1,6 @@
 <template>
-    <div>
-        صفحه پروژه های من
+    <div class="flex">
+        <HomeFarsiMyPortFolio />
     </div>
 </template>
 

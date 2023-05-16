@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'HomeMyPortFolio': typeof import("../components/home/myPortFolio.vue")['default']
     'HomeSlider': typeof import("../components/home/slider.vue")['default']
+    'HomeFarsiMyPortFolio': typeof import("../components/homeFarsi/myPortFolio.vue")['default']
     'HomeFarsiSlider': typeof import("../components/homeFarsi/slider.vue")['default']
     'LayoutComponentMenuLayout': typeof import("../components/layoutComponent/MenuLayout.vue")['default']
     'LayoutFarsiMenuFarsi': typeof import("../components/layoutFarsi/menuFarsi.vue")['default']
@@ -26,6 +27,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyHomeMyPortFolio': typeof import("../components/home/myPortFolio.vue")['default']
     'LazyHomeSlider': typeof import("../components/home/slider.vue")['default']
+    'LazyHomeFarsiMyPortFolio': typeof import("../components/homeFarsi/myPortFolio.vue")['default']
     'LazyHomeFarsiSlider': typeof import("../components/homeFarsi/slider.vue")['default']
     'LazyLayoutComponentMenuLayout': typeof import("../components/layoutComponent/MenuLayout.vue")['default']
     'LazyLayoutFarsiMenuFarsi': typeof import("../components/layoutFarsi/menuFarsi.vue")['default']
@@ -52,6 +54,7 @@ declare module 'vue' {
 
 export const HomeMyPortFolio: typeof import("../components/home/myPortFolio.vue")['default']
 export const HomeSlider: typeof import("../components/home/slider.vue")['default']
+export const HomeFarsiMyPortFolio: typeof import("../components/homeFarsi/myPortFolio.vue")['default']
 export const HomeFarsiSlider: typeof import("../components/homeFarsi/slider.vue")['default']
 export const LayoutComponentMenuLayout: typeof import("../components/layoutComponent/MenuLayout.vue")['default']
 export const LayoutFarsiMenuFarsi: typeof import("../components/layoutFarsi/menuFarsi.vue")['default']
@@ -75,6 +78,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyHomeMyPortFolio: typeof import("../components/home/myPortFolio.vue")['default']
 export const LazyHomeSlider: typeof import("../components/home/slider.vue")['default']
+export const LazyHomeFarsiMyPortFolio: typeof import("../components/homeFarsi/myPortFolio.vue")['default']
 export const LazyHomeFarsiSlider: typeof import("../components/homeFarsi/slider.vue")['default']
 export const LazyLayoutComponentMenuLayout: typeof import("../components/layoutComponent/MenuLayout.vue")['default']
 export const LazyLayoutFarsiMenuFarsi: typeof import("../components/layoutFarsi/menuFarsi.vue")['default']
