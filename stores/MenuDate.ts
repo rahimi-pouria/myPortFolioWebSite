@@ -13,27 +13,19 @@ export const useMenuData = defineStore('menu', () => {
         },
         {
             name : 'About',
-            link: '/About'
+            link: '/'
         },
         {
-            name : 'MySkils',
-            link: '/MySkils'
+            name : 'Services',
+            link: '/'
         },
         {
-            name : 'MyProject',
-            link: '/MyProject'
-        },
-        {
-            name : 'Work',
-            link: '/Work'
+            name : 'Portfolio',
+            link: '/'
         },
         {
             name : 'Contact',
-            link: '/Contact'
-        },
-        {
-            name : 'Blog',
-            link: '/Blog'
+            link: '/'
         }
     ] as pageMenu[])
 

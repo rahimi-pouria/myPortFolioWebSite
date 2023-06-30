@@ -14,5 +14,7 @@ export default defineNuxtConfig({
         '~/assets/css/size.scss',
         '~/assets/sass/color.sass'
       ],
-      modules: ['@pinia/nuxt'],
+  modules: [
+    '@pinia/nuxt'
+  ]
 }) 

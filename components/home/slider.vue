@@ -5,7 +5,7 @@
                 Hi <br />
                 I am <br />
                 Pouria Rahimi <br />
-                Front end Developer
+                Front End Developer
             </h1>
             <span class="f18-400 sub-text">Front end Developer  /  Vue js & Nuxt js</span>
             <nuxt-link to="/" class="link-contact-me anim-link-contact-me w-[20%]">Contact me!</nuxt-link>

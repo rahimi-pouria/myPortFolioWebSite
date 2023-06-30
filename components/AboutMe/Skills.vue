@@ -1,13 +1,11 @@
 <template>
-    <div>
-        صفحه بلاگ سایت
+    <div class="flex flex-col">
+        skills
     </div>
 </template>
 
 <script setup lang="ts">
-    definePageMeta({
-        layout: 'layout-farsi'
-    })
+
 </script>
 
 <style lang="scss" scoped>
