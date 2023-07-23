@@ -5,30 +5,25 @@ import { defineStore } from "pinia";
 export interface MainMenu { 
     name: string,
     path: string,
-    current: boolean
 }
 
 export const useMainMenu = defineStore('menu', () => { 
     const MainMenu = ref<MainMenu[]>([
         {
-            name: 'Home',
-            path: '#',
-            current: true 
+            name: 'تماس',
+            path: '/'
         },
         {
-            name: 'Tech Stack',
-            path: '#',
-            current: false
+            name: 'بلاگ',
+            path: '/'
         },
         {
-            name: 'Projects',
-            path: '#',
-            current: false
+            name: 'نمونه کارها',
+            path: '/'
         },
         {
-            name: 'Contact',
-            path: '#',
-            current: false
+            name: 'خانه',
+            path: '/'
         },
     ] as MainMenu[])
 

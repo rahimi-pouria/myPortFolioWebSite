@@ -7,11 +7,10 @@
     padding: 0;
 }
 body{
-    background-color:#fff;
+    background: url('../img/back.png');
+    background-repeat: no-repeat;   
+    direction: rtl;
 }
 /* responsive */
 @media (min-width: 1280px){
-    .container {
-        max-width: 1103px !important;
-    }
 }
