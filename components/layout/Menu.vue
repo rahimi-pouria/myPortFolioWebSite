@@ -18,7 +18,7 @@
         </div>
         <div class="flex w-[15%] md:pr-[23px] items-center md:justify-end sm:justify-center hamburguer-menu-mobile md:pl-6">
             <div @click="sideBar = !sideBar" class="flex  items-center justify-center bg-white w-[50px] h-[50px] rounded-full">
-                <img src="../assets/img/hamMenu.png" alt="">
+                <img src="@/assets/img/hamMenu.png" alt="">
             </div>
         </div>
 
@@ -26,8 +26,9 @@
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue'
 // add stores menu data 
-import { useMainMenu } from '../stores/menu'
+import { useMainMenu } from '@/stores/menu'
 const Main = useMainMenu()
 let sideBar = ref<any>(true)
 

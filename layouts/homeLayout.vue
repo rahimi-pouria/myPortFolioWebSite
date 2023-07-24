@@ -1,15 +1,15 @@
 <template>
     <div class="flex container layout-yourself-website gap-6 mx-auto flex-col w-full">
-        <Menu />
+        <LayoutMenu/>
         <div class="flex w-full gap-4 sm:p-6 layouts-user flex-wrap relative">
             <!-- menu-user -->
             <div class="flex xl:w-[13%] lg:w-[13%] 
             md:w-[13%] sm:w-[100%] xl:fixed 
             lg:fixed md:fixed Advance-User sm:order-6 justify-center">
-                <AdvanceUser />
+                <LayoutAdvanceUser/>
             </div>
             <div class="flex md:absolute md:w-[61%] sm:order-4 
-            bg-white show-data-page">
+            bg-white show-data-page container mx-auto">
                 <slot />
             </div>
             <div class="flex flex-col xl:fixed lg:fixed 
@@ -17,7 +17,7 @@
             lg:right-[4.5%] md:right-[4.5%]
              User-Data md:w-[27%] items-center j
              ustify-center sm:order-5 show-resourse-user">
-                <UserData />
+                <LayoutUserData/>
             </div>
         </div>
     </div>
@@ -36,7 +36,7 @@
     // responsive
     @media screen and (max-width: 600px) {  
         .layout-yourself-website{
-            padding: 0 15px;
+            padding: 0 25px;
         }
         .show-data-page {
             left: 1%;

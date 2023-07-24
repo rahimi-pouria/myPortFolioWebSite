@@ -10,20 +10,20 @@ export interface MainMenu {
 export const useMainMenu = defineStore('menu', () => { 
     const MainMenu = ref<MainMenu[]>([
         {
-            name: 'تماس',
-            path: '/'
-        },
-        {
-            name: 'بلاگ',
+            name: 'خانه',
             path: '/'
         },
         {
             name: 'نمونه کارها',
-            path: '/'
+            path: '/Portfolio'
         },
         {
-            name: 'خانه',
-            path: '/'
+            name: 'بلاگ',
+            path: '/Blog'
+        },
+        {
+            name: 'تماس',
+            path: '/Contact-me'
         },
     ] as MainMenu[])
 

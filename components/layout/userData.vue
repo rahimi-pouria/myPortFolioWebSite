@@ -4,7 +4,7 @@
                     <img src="@/assets/img/profile-pic.png" class="rounded-full w-[195px] h-[195px]" alt="pouria rahimi">
                     <div class="flex flex-col gap-9 items-center">
                         <h2 class="f38-700">پوریا رحیمی</h2>
-                    <p class="f14-400">(Vue js & Nuxt Js) برنامه نویس فرانت اند </p>
+                    <p class="f14-400"> برنامه نویس فرانت اند (Vue js & Nuxt Js) </p>
                     </div>
                     <div class="flex w-full justify-center gap-4">
                         <nuxt-link to="/">
