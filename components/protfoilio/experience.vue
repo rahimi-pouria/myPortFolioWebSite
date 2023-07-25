@@ -1,17 +1,14 @@
 <template>
-    <div class="sample p-3 flex flex-col gap-8">
+    <div class="sample p-3 flex flex-wrap gap-8">
         <h4 class="f28-700">
             نمونه کارها
         </h4>
         <div class="flex w-full gap-3">
-            <div v-for="(item, i) in samples.sampleHome" 
+            <div v-for="(item, i) in sample.experince" 
             :key="i"
             class="flex flex-col w-[50%] gap-3 shadow-xl">
                 <!-- header  -->
                 <div class="header-card flex">
-                
-                    <!-- <img :src="item.photo" />  -->
-
                    <img src="@/assets/img/login.jpg" alt="">
                 </div>
                 <!-- body -->
@@ -31,11 +28,8 @@
 </template>
 
 <script setup lang="ts">
-
-import { useSampleHome } from '@/stores/SampleHome'
-
-const samples = useSampleHome()
-
+import { usePortfolio } from '@/stores/Portfolio'
+const sample = usePortfolio()
 
 </script>
 
