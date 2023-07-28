@@ -85,5 +85,6 @@ let toolTipsResume = ref<any>(true)
     .options-menu{
         width: 60% !important;
     }
+
 }
 </style>

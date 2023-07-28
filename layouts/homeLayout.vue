@@ -14,7 +14,7 @@
             </div>
             <div class="flex flex-col xl:fixed lg:fixed 
             md:fixed xl:right-[4.5%] 
-            lg:right-[4.5%] md:right-[4.5%]
+            lg:right-[4.5%] md:right-[1%]
              User-Data md:w-[27%] items-center j
              ustify-center sm:order-5 show-resourse-user">
                 <LayoutUserData/>
@@ -63,5 +63,8 @@
         .show-data-page{
             left: 9%;
         } 
+        .show-resourse-user{
+        right: 3% !important;
+        }
     }
 </style>

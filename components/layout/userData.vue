@@ -46,5 +46,8 @@
         }
     }
     @media screen and (min-width: 820px) and (max-width: 1180px) { 
+        .show-resourse-user{
+        right: 1% !important;
+    }
     }
 </style>
