@@ -20,11 +20,7 @@ export const useMainMenu = defineStore('menu', () => {
         {
             name: 'بلاگ',
             path: '/Blog'
-        },
-        {
-            name: 'تماس',
-            path: '/Contact-me'
-        },
+        }
     ] as MainMenu[])
 
     // return

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col p-4 gap-8 text-right w-full">
+    <div class="flex flex-col p-4 gap-8 text-right w-full" id="ContactMe">
         <h3 class="f28-700">
             درباره من
         </h3>

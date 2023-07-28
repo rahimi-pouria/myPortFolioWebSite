@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="flex w-full shadow-xl bg-white p-9 justify-center items-center">
-                    <nuxt-link to="" class="btn bg-[#000] text-white p-3 rounded-lg w-[70%] text-center pointer">دانلود رزومه</nuxt-link>
+                    <nuxt-link to="/pouria-rahimi.pdf" class="btn bg-[#000] text-white p-3 rounded-lg w-[70%] text-center pointer">دانلود رزومه</nuxt-link>
                 </div>
 </template>
 

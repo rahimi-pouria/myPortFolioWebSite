@@ -5,9 +5,9 @@
         </h4>
         <div class="flex flex-wrap w-full">
             <div v-for="(item, i) in experience.exper" :key="i" 
-            class="flex flex-col w-[50%] gap-4 p-4 items-start">
+            class="flex flex-col w-[50%] expirence-responsive gap-4 p-4 items-start">
                 <img src="@/assets/img/designer.png" class="w-[90px] mr-[-16px]" alt="">
-                <h5 class="f22-400">{{ item.name }}</h5>
+                <h5 class="f22-400 title-responsive">{{ item.name }}</h5>
                 <div class="flex gap-1">
                     <span class="f18-400 text-[#919191]">سمت شغلی: </span>
                     <span class="f18-400 text-[#919191]">{{ item.position }}</span>
@@ -32,4 +32,15 @@ const experience = useExperience()
     .decription{
         line-height: 1.5;
     }
+// responsive
+
+@media screen and (max-width: 600px) {
+    .expirence-responsive{
+        width: 100% !important;
+    }
+    .title-responsive{
+        font-size: 18px;
+    }
+}
+
 </style>

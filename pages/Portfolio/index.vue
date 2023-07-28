@@ -6,7 +6,7 @@
         <div class="flex flex-wrap w-full gap-4 pr-2">
             <div v-for="(item, i) in sample.experince" 
             :key="i"
-            class="flex flex-col w-[48%] gap-3 shadow-xl">
+            class="flex flex-col portfolio-mobile w-[48%] gap-3 shadow-xl">
                 <!-- header  -->
                 <div class="header-card flex">
                    <img src="@/assets/img/login.jpg" alt="">
@@ -36,5 +36,23 @@
 </script>
 
 <style lang="scss" scoped>
-
+// responsive
+@media screen and (max-width: 600px) {
+    .portfolio-mobile{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .portfolio-mobile {
+        width: 100% !important;
+    }
+}
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+    .sample-mobile{
+        flex-wrap: wrap;
+    }
+    .card-mobile{
+        width: 100% !important;
+    }
+}
 </style>

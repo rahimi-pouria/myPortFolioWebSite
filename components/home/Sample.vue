@@ -3,10 +3,10 @@
         <h4 class="f28-700">
             نمونه کارها
         </h4>
-        <div class="flex w-full gap-3">
+        <div class="flex w-full sample-mobile gap-3">
             <div v-for="(item, i) in samples.sampleHome" 
             :key="i"
-            class="flex flex-col w-[50%] gap-3 shadow-xl">
+            class="flex flex-col w-[50%] card-mobile gap-3 shadow-xl">
                 <!-- header  -->
                 <div class="header-card flex">
                 
@@ -41,4 +41,30 @@ const samples = useSampleHome()
 
 <style lang="scss" scoped>
 
+// responsive
+@media screen and (max-width: 600px) {
+    .sample-mobile{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .card-mobile{
+        width: 100% !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .sample-mobile{
+        flex-wrap: wrap;
+    }
+    .card-mobile{
+        width: 100% !important;
+    }
+}
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+    .sample-mobile{
+        flex-wrap: wrap;
+    }
+    .card-mobile{
+        width: 100% !important;
+    }
+}
 </style>

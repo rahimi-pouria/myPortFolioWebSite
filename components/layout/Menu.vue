@@ -1,24 +1,15 @@
 <template>
-    <div class="flex justify-between w-full relative">
-        <div class="flex w-[50] absolute sideBar" :class="{'side-bar-menu' : sideBar}">
-            <!-- header sidbar -->
-            <p>&items</p>
-        </div>
-        <div class="flex w-[30%] logo p-4 items-end justify-start">
+    <div class="flex justify-between md:p-4 w-full relative">
+        <div class="flex w-[20%] logo p-4 items-end justify-start">
             <nuxt-link to="/">
                 <p class="f48-700">
                     Pouria Rahimi
                 </p>
             </nuxt-link>
         </div>
-        <div class="flex w-[55%] show-menu items-center justify-center">
+        <div class="flex w-[80%] show-menu items-center justify-center">
             <div class="flex px-5 justify-between items-center" v-for="(item, i) in Main.MainMenu" :key="i">
-                <nuxt-link class="f18-400" :to="item.path">{{ item.name }}</nuxt-link>
-            </div>
-        </div>
-        <div class="flex w-[15%] md:pr-[23px] items-center md:justify-end sm:justify-center hamburguer-menu-mobile md:pl-6">
-            <div @click="sideBar = !sideBar" class="flex  items-center justify-center bg-white w-[50px] h-[50px] rounded-full">
-                <img src="@/assets/img/hamMenu.png" alt="">
+                <nuxt-link class="f22-400" :to="item.path">{{ item.name }}</nuxt-link>
             </div>
         </div>
 
@@ -39,10 +30,11 @@ let sideBar = ref<any>(true)
         display: none;
     }
 .sideBar {
-    left: -40px;
+    left: -24px;
     width: 20%;
     background: #fff;
     height: 100vh;
+    z-index: 9;
 }
 @media screen and (max-width: 600px) {
     .show-menu{
@@ -62,4 +54,12 @@ let sideBar = ref<any>(true)
 }   .logo a p {
     font-size: 30px !important;
 }
+
+@media screen and (min-width: 1200px) {
+
+    .show-ham-menu{
+        display: none !important;
+    }
+}
+
 </style>

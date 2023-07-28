@@ -32,6 +32,7 @@
     }
     .show-data-page{
         left: 8%;
+        z-index: -1;
     }
     // responsive
     @media screen and (max-width: 600px) {  

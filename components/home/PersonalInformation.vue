@@ -4,7 +4,7 @@
             <h4 class="f28-700 personal"> 
                 اطلاعات شخصی
             </h4>
-            <div class="flex gap-4  flex-col w-full">
+            <div class="flex gap-8  flex-col w-full">
                 <div class="flex justify-between w-full">
                     <p class="f18-400 text-[#333333] w-[25%]">
                         سن:
