@@ -61,7 +61,7 @@
         gap: 10px;
     }
     .skills-responsive{
-        width: 48% !important;
+        width: 45% !important;
     }
 }
 

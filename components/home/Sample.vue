@@ -4,7 +4,7 @@
             نمونه کارها
         </h4>
         <div class="flex w-full sample-mobile gap-3">
-            <div v-for="(item, i) in samples.sampleHome" 
+            <div v-for="(item, i) in protfolioPage.sampleHome" 
             :key="i"
             class="flex flex-col w-[50%] card-mobile gap-3 shadow-xl">
                 <!-- header  -->
@@ -32,9 +32,9 @@
 
 <script setup lang="ts">
 
-import { useSampleHome } from '@/stores/SampleHome'
+import { useSamplePOrtFolio } from '@/stores/SampleHome'
 
-const samples = useSampleHome()
+const protfolioPage = useSamplePOrtFolio()
 
 
 </script>

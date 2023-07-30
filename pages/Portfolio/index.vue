@@ -1,10 +1,10 @@
 <template>
-    <div class="sample p-4 flex flex-wrap gap-8">
+    <div class="samples p-4 flex flex-wrap gap-8">
         <h4 class="f28-700">
             نمونه کارها
         </h4>
         <div class="flex flex-wrap w-full gap-4 pr-2">
-            <div v-for="(item, i) in sample.experince" 
+            <div v-for="(item, i) in sample" 
             :key="i"
             class="flex flex-col portfolio-mobile w-[48%] gap-3 shadow-xl">
                 <!-- header  -->
@@ -31,8 +31,51 @@
     definePageMeta({
             layout: 'home-layout'
     })
-    import { usePortfolio } from '@/stores/Portfolio'
-    const sample = usePortfolio()
+const sample = [
+        {
+            title: 'سایت شخصی پوریا رحیمی',
+            description: 'این پروژه با ناکست جی اس 3 و پینیا و تایپ اسکریپت پیاده سازی شده است این پروژه برای معرفی هر چه بهتر اینجانب به کارفرمایان عزیز  پیاده سازی شده است.',
+            pathCode: 'https://github.com/rahimi-pouria/Front-End',
+            pathView: 'https://pouria-rahimi.ir',
+            photo: 'login.jpg'
+        },
+        {
+            title: 'پنل ادمین اجاره صندلی آرایشگاه',
+            description: 'این پروژه با ناکست جی اس 3 و پینیا و تایپ اسکریپت پیاده سازی شده است این پروژه به صورت ریموت بوده و برای شخص انجام شده است و بر اساس میدلور دسترسی ها مشخص شده است',
+            pathCode: 'https://github.com/rahimi-pouria/Front-End',
+            pathView: '/',
+            photo: 'login.jpg'
+        },
+        {
+            title: 'چت آنلاین',
+            description: 'این پروژه با ناکست جی اس 3 و پینیا و تایپ اسکریپت پیاده سازی شده است که در سایت لرنیا استفاده شده است در شرکت بامداد انجام شده است',
+            pathCode: '/',
+            pathView: 'lrnia.com',
+            photo: 'chat.jpg'
+        },
+        {
+            title: 'پنل ادمین همانند وردپرس',
+            description: 'این پروژه بر اساس ویو جی اس و ناکست سه و تایپ اسکریپت و پینیا پیاده سازی شده اکه بنا بر خواسته شرکت رها طب و طرح فیگما انجام شده است ',
+            pathCode: 'https://github.com/rahimi-pouria/Front-End',
+            pathView: '/',
+            photo: 'login.jpg'
+        },
+        {
+            title: 'بازی  پازل',
+            description: 'این پروژه با ری اکت جی اس پیاده سازی شده است. این زمانی پیاده سازی شد که بنده برای استخدامی شرکت بامداد اقدام کرده بودم و این  پروژه تسکی بود برای ورود به شرکت بامداد',
+            pathCode: '/',
+            pathView: 'lrnia.com',
+            photo: 'chat.jpg'
+        },
+        {
+            title: 'بازی  اسکویید گیم',
+            description: 'این پروژه با ری اکت جی اس پیاده سازی شده است این پروژه رو در شرکت آیشن زمانی که آخرین مرحله استخدامی بودم پیاده سازی شد و بر این اسا مورد تایید منتور قرار گرفت  ',
+            pathCode: '/',
+            pathView: 'lrnia.com',
+            photo: 'chat.jpg'
+        }
+]
+    
 </script>
 
 <style lang="scss" scoped>

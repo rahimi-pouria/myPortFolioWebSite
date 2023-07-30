@@ -6,7 +6,7 @@
         <hr class="w-full">
         <HomeSkills />
         <hr class="w-full">
-        <HomeExperience />
+        <experience />
         <hr class="w-full">
         <HomeSample />
         <hr class="w-full">
@@ -15,6 +15,7 @@
 </template>
 
 <script setup lang="ts">
+import experience from '@/components/home/experience.vue'
 definePageMeta({
         layout: 'home-layout'
     })

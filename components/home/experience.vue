@@ -7,7 +7,7 @@
             <div v-for="(item, i) in experience.exper" :key="i" 
             class="flex flex-col w-[50%] expirence-responsive gap-4 p-4 items-start">
                 <img src="@/assets/img/designer.png" class="w-[90px] mr-[-16px]" alt="">
-                <h5 class="f22-400 title-responsive">{{ item.name }}</h5>
+                <h5 class="f22-400 title-responsive">{{ item.title }}</h5>
                 <div class="flex gap-1">
                     <span class="f18-400 text-[#919191]">سمت شغلی: </span>
                     <span class="f18-400 text-[#919191]">{{ item.position }}</span>

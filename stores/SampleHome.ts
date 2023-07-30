@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 
 // interface
-export interface sampleHome { 
+export interface protSample { 
     title: string,
     description: string,
     pathCode: string,
@@ -9,8 +9,8 @@ export interface sampleHome {
     photo: string
 }
 
-export const useSampleHome = defineStore('samples', () => { 
-    const sampleHome = ref<sampleHome[]>([
+export const useSamplePOrtFolio = defineStore('samples', () => { 
+    const portData = ref<protSample[]>([
         {
             title: 'پنل ادمین اجاره صندلی آرایشگاه',
             description: 'این پروژه با ناکست جی اس 3 و پینیا و تایپ اسکریپت پیاده سازی شده است این پروژه به صورت ریموت بوده و برای شخص انجام شده است',
@@ -27,10 +27,10 @@ export const useSampleHome = defineStore('samples', () => {
             photo: '~/assets/img/chat.jpg'
         }
         
-    ] as sampleHome[])
+    ] as protSample[])
 
 
     return {
-        sampleHome
+        portData
     }
 })
