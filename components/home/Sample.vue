@@ -4,7 +4,7 @@
             نمونه کارها
         </h4>
         <div class="flex w-full sample-mobile gap-3">
-            <div v-for="(item, i) in protfolioPage.sampleHome" 
+            <div v-for="(item, i) in protfolioPage.portData" 
             :key="i"
             class="flex flex-col w-[50%] card-mobile gap-3 shadow-xl">
                 <!-- header  -->
