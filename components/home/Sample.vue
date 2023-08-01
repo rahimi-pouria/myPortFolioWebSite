@@ -12,7 +12,7 @@
                 
                     <!-- <img :src="item.photo" />  -->
 
-                   <img src="@/assets/img/login.jpg" alt="">
+                   <img :src="item.photo" alt="">
                 </div>
                 <!-- body -->
                 <div class="flex flex-col gap-5 justify-between">
@@ -21,8 +21,8 @@
                         <p class="text-[#919191]">{{ item.description }}</p>
                     </div>
                     <div class="flex w-full justify-between gap-3 p-4">
-                        <nuxt-link to="/" class="f14-400 rounded-lg bg-[#2eca7f] p-2">نمایش پروژه</nuxt-link>
-                        <nuxt-link to="/" class="f14-400 rounded-lg bg-[#2eca7f] p-2">نمایش بیشتر</nuxt-link>
+                        <nuxt-link :to="item.pathCode" class="f14-400 rounded-lg bg-[#2eca7f] p-2">نمایش پروژه</nuxt-link>
+                        <nuxt-link to="/Portfolio" class="f14-400 rounded-lg bg-[#2eca7f] p-2">نمایش بیشتر</nuxt-link>
                     </div>
                 </div>
             </div>

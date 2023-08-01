@@ -16,7 +16,7 @@ export const useSamplePOrtFolio = defineStore('samples', () => {
             description: 'این پروژه با ناکست جی اس 3 و پینیا و تایپ اسکریپت پیاده سازی شده است این پروژه به صورت ریموت بوده و برای شخص انجام شده است',
             pathCode: 'https://github.com/rahimi-pouria/Front-End',
             pathView: '/',
-            photo: '~/assets/img/login.jpg'
+            photo: '@/assets/img/login.jpg'
         },
 
         {
