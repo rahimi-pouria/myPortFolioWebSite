@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-wrap gap-8 p-4 skills">
+    <div dir="auto" class="flex flex-wrap gap-8 p-4 skills">
         <h4 class="f28-700">
-            مهارت های من
+            {{ $t('mySkills', {name: 'mySkills'}) }}
         </h4>
         <div class="flex w-full flex-wrap sikll-mobil">
             <div class="flex w-[13%] skills-responsive items-center justify-center">

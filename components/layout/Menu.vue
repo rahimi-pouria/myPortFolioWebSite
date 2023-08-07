@@ -7,12 +7,31 @@
                 </p>
             </nuxt-link>
         </div>
-        <div class="flex w-[80%] show-menu items-center justify-center">
-            <div class="flex px-5 justify-between items-center" v-for="(item, i) in Main.MainMenu" :key="i">
-                <nuxt-link class="f22-400" :to="item.path">{{ item.name }}</nuxt-link>
+        <div dir="auto" class="flex w-[80%] show-menu items-center justify-center">
+            <div class="flex px-5 justify-between items-center"
+             v-for="(item, i) in Main.MainMenu" :key="item.id">
+                <nuxt-link class="f22-400" :to="item.path">
+                {{ $t(`item${item.id}name`) }}
+                </nuxt-link>
             </div>
         </div>
+        <form class="flex items-center justify-center ">
+                <select
+                    class="px-6 rounded-xl py-2  bg-white text-black border-none hover:border-none focus:border-none active:border-none selection:border-none"
+                    v-model="$i18n.locale">
+                    <option
+                        class=" focus:border-none active:border-none
+                                                                                                                                                                                                                                                    selection:border-none hover:border-none"
+                        value="fa">
+                        fa</option>
+                    <option
+                        class=" focus:border-none active:border-none
+                                                                                                                                                                                                                                                    selection:border-none hover:border-none"
+                        value="en">
+                        en</option>
 
+                </select>
+        </form>
     </div>
 </template>
 

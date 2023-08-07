@@ -18,7 +18,7 @@
 import experience from '@/components/home/experience.vue'
 definePageMeta({
         layout: 'home-layout'
-    })
+})
 </script>
 
 <style lang="scss" scoped>

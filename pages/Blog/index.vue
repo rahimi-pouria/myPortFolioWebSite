@@ -1,8 +1,10 @@
 <template>
-    <div class="flex flex-col p-4 gap-1 pb-4 bg-white w-full">
-        <h4 class="f28-400">مقاله ها</h4>
+    <div dir="auto" class="flex flex-col p-4 gap-1 pb-4 bg-white w-full">
+        <h4 class="f28-400">
+            {{ $t('Articles', {name: 'Articles'}) }}
+        </h4>
         <p class="f18-400 text-[#919191] text-blog">
-            با سلام خدمت همه عزیزانی از سایت اینجانب دیدن میفرمایند. با عرض معذرت بابت روبرو شدن با این برگه از سایت ما در حال ساخت برگه وبلاگ هستیم در آینده ای نزدیک با مقاله های به روز در خدمت شما عزیزان هستیم
+            {{ $t('descArticels', {name: 'descArticels'}) }} 
         </p>
         <img src="@/assets/img/create.jpg" alt="">
     </div>

@@ -1,13 +1,13 @@
 <template>
     <div class="flex flex-wrap w-full">
-        <div class="flex flex-col p-4 text-right gap-8 md:w-[70%]">
+        <div dir="auto" class="flex flex-col p-4 gap-8 md:w-[70%]">
             <h4 class="f28-700 personal"> 
-                اطلاعات شخصی
+                {{ $t('PersonalInformation', {name: 'PersonalInformation'}) }}
             </h4>
             <div class="flex gap-8  flex-col w-full">
                 <div class="flex justify-between w-full">
                     <p class="f18-400 text-[#333333] w-[25%]">
-                        سن:
+                        {{ $t('Age', {name: 'Age'}) }}
                     </p>
                     <p class="f18-400 text-[#919191] w-[75%]">
                         32
@@ -15,23 +15,23 @@
                 </div>
                 <div class="flex justify-between w-full">
                     <p class="f18-400 text-[#333333] w-[25%]">
-                        محل سکونت:
+                        {{ $t('Address', {name: 'Address'}) }}
                     </p>
                     <p class="f18-400 text-[#919191] w-[75%]">
-                        تهران
+                        {{ $t('Tehran', {name: 'Tehran'}) }}
                     </p>
                 </div>
                 <div class="flex justify-between w-full">
                     <p class="f18-400 text-[#333333] w-[25%]">
-                        آدرس:
+                        {{ $t('Address2', {name: 'Address2'}) }}
                     </p>
                     <p class="f18-400 text-[#919191] break-words w-[75%]">
-                       تهران خیابان شریعتی خیابان معلم خیابان گوهری کوچه خرمی شاد کوچه تکیه پلاک 12
+                        {{ $t('HomeAddress', {name: 'HomeAddress'}) }}
                     </p>
                 </div>
                 <div class="flex justify-between w-full">
                     <p class="f18-400 text-[#333333] w-[25%]">
-                        ایمیل:
+                        {{ $t('Email', {name: 'Email'}) }}
                     </p>
                     <p class="f18-400 text-[#919191] break-words w-[75%]">
                         pouria.rahimy@gmail.com
@@ -39,7 +39,7 @@
                 </div>
                 <div class="flex justify-between w-full">
                     <p class="f18-400 text-[#333333] w-[25%]">
-                        شماره تماس:
+                        {{ $t('PhoneNumber', {name: 'PhoneNumber'}) }}
                     </p>
                     <p class="f18-400 text-[#919191] w-[75%]">
                         09184095907 - 09220529612
@@ -47,33 +47,41 @@
                 </div>
                 <div class="flex justify-between w-full">
                     <p class="f18-400 text-[#333333] w-[25%]">
-                        نحوه همکاری:
+                        {{ $t('cooperate', {name: 'cooperate'}) }}
                     </p>
                     <p class="f18-400 text-[#919191] w-[75%]">
-                        تمام وقت - پاره وقت - دورکاری
+                        {{ $t('work', {name: 'work'}) }}
                     </p>
                 </div>
             </div>
         </div>
-        <div class="flex flex-col p-4 gap-5 md:w-[30%] faviorate">
+        <div dir="auto" class="flex flex-col p-4 gap-5 md:w-[30%] faviorate">
             <h4 class="f28-700"> 
-                علایق
+                {{ $t('faviorate', {name: 'faviorate'}) }}
             </h4>
             <div class="flex gap-3 items-center">
                 <img src="@/assets/img/shatrang.png" alt="">
-                <p class="f18-400 text-[#919191]">بازی شطرنج</p>
+                <p class="f18-400 text-[#919191]">
+                    {{ $t('Chess', {name: 'Chess'}) }}
+                </p>
             </div>
             <div class="flex gap-3 items-center">
                 <img src="@/assets/img/music.png" alt="">
-                <p class="f18-400 text-[#919191]">موسیقی</p>
+                <p class="f18-400 text-[#919191]">
+                    {{ $t('Music', {name: 'Music'}) }}
+                </p>
             </div>
             <div class="flex gap-3 items-center">
                 <img src="@/assets/img/footbal.png" alt="">
-                <p class="f18-400 text-[#919191]">فوتبال</p>
+                <p class="f18-400 text-[#919191]">
+                    {{ $t('Soccer', {name: 'Soccer'}) }}
+                </p>
             </div>
             <div class="flex gap-3 items-center">
                 <img src="@/assets/img/food.png" alt="">
-                <p class="f18-400 text-[#919191]">همبرگر</p>
+                <p class="f18-400 text-[#919191]">
+                    {{ $t('hamburger', {name: 'hamburger'}) }}
+                </p>
             </div>
         </div>
     </div>  

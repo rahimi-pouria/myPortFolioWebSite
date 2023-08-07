@@ -1,16 +1,13 @@
 <template>
-    <div class="flex flex-col p-4 gap-8 text-right w-full" id="ContactMe">
-        <h3 class="f28-700">
-            درباره من
+    <div dir="auto" class="flex flex-col p-4 gap-8  w-full" id="ContactMe">
+        <h3 class="f28-700" dir="auto">
+            {{ $t('About', { name: 'About' }) }}
         </h3>
-        <p class="f22-400 text-[#565656]">
-            سلام من پوریا رحیمی هستم!
+        <p class="f22-400 text-[#565656]" dir="auto">
+           {{ $t('Introduction', {name: 'Introduction'}) }}
         </p>
-        <p class="14-400 pararaph-about-me">
-            بنده یک سال و نیم هست که در زمینه برنامه نویسی فرانت فعالیت دارم.
-            که در سال 1400 با ری اکت جی اس شروع کردم 
-            و بازی اسکویید گیم و بازی پازل و سایت شخصی خودم که هم با ناکست سه نوشته با نکست هم نوشته شده است 
-            بنده آدمی هستم که دنبال پیشرفته و براش مهم نیست که چه فریمورک یا کتابخونه ای کار بکنه فقط این برام مهمه که برنامه بنویسم.
+        <p class="14-400 pararaph-about-me" dir="auto">
+            {{ $t('description', { name: 'description' }) }}
         </p>
     </div>
 </template>
