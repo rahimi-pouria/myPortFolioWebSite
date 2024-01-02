@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   target: 'static',
   router: {
-    base: '/my-website/'
+    base: '/myPortFolioWebSite/'
   },
   build: {
     publicPath: './_nuxt/',
