@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   target: 'static',
+  router: {
+    base: '/my-website/'
+  },
+  build: {
+    publicPath: './_nuxt/',
+  },
     postcss: {
         plugins: {
           tailwindcss: {},
